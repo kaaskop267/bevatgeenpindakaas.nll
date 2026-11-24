@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Cals College Nieuwegein bevat geen pindakaas</title>
+<style>
+:root{--bg:#fff8e6;--fg:#2b1d0e;--card:#ffffff;--accent:#d9822b;--accent2:#1f6f5c;--muted:#7a6650;--line:#ecd9b5;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1d140b;--fg:#fbeed5;--card:#2a1d10;--accent:#f0a24b;--accent2:#5fcfb3;--muted:#c5ab87;--line:#4a3520}}
+:root[data-theme="dark"]{--bg:#1d140b;--fg:#fbeed5;--card:#2a1d10;--accent:#f0a24b;--accent2:#5fcfb3;--muted:#c5ab87;--line:#4a3520}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:"Trebuchet MS",Verdana,sans-serif;line-height:1.55}
+.wrap{max-width:860px;margin:0 auto;padding:20px}
+nav{display:flex;gap:14px;flex-wrap:wrap;justify-content:center;padding:10px 0;font-weight:bold;font-size:.95rem}
+nav a{color:var(--accent2);text-decoration:none}
+nav a:hover{text-decoration:underline wavy}
+header{text-align:center;padding:30px 10px 10px}
+.jar{font-size:4.5rem;display:inline-block;animation:wob 3s ease-in-out infinite}
+@keyframes wob{50%{transform:rotate(-8deg) scale(1.05)}}
+h1{font-size:clamp(1.8rem,6vw,3rem);margin:.2em 0;line-height:1.1}
+h1 span{color:var(--accent);text-decoration:line-through wavy var(--accent2)}
+.sub{color:var(--muted);font-size:1.05rem}
+.badge{display:inline-block;background:var(--accent2);color:#fff;border-radius:99px;padding:4px 14px;font-size:.85rem;margin:8px 0}
+.card{background:var(--card);border:2px dashed var(--line);border-radius:16px;padding:18px 20px;margin:20px 0}
+h2{margin-top:0;color:var(--accent)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.grid .card{margin:0}
+input{width:100%;padding:12px;border-radius:10px;border:2px solid var(--line);background:var(--bg);color:var(--fg);font-size:1rem}
+button{margin-top:10px;background:var(--accent);color:#fff;border:0;border-radius:10px;padding:12px 18px;font-size:1rem;font-weight:bold;cursor:pointer}
+button:hover{filter:brightness(1.1)}
+#res{margin-top:12px;font-weight:bold;min-height:3em}
+table{width:100%;border-collapse:collapse}
+td,th{padding:8px;border-bottom:1px solid var(--line);text-align:left}
+.scroll{overflow-x:auto}
+footer{text-align:center;color:var(--muted);font-size:.8rem;padding:20px 0 40px}
+.marquee{background:var(--accent);color:#fff;overflow:hidden;white-space:nowrap;border-radius:10px;padding:6px 0}
+.marquee div{display:inline-block;padding-left:100%;animation:m 22s linear infinite}
+@keyframes m{to{transform:translateX(-100%)}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav><a href="#check">Pindakaas-check</a><a href="#rooster">Rooster</a><a href="#nieuws">Nieuws</a><a href="#faq">FAQ</a></nav>
+<div class="marquee"><div>📢 Let op: de kantine bevat mogelijk wél pindakaas · De Wi-Fi bevat geen pindakaas, maar ook geen verbinding · Mentoruur bevat 12% pindakaas (gevoelsmatig) · Fiets vergeten? Geen pindakaas in het fietsenhok ·</div></div>
+
+<header>
+<div class="jar">🥜</div>
+<h1>Cals College Nieuwegein <span>bevat pindakaas</span><br>bevat géén pindakaas</h1>
+<p class="sub">Het enige officiële* informatiepunt over wat er wél en niet in je school zit.</p>
+<span class="badge">✅ 100% pindakaasvrij (volgens ons)</span>
+</header>
+
+<section class="card" id="check">
+<h2>🔍 De Pindakaas-Checker</h2>
+<p>Typ iets van school in en wij vertellen of het pindakaas bevat.</p>
+<input id="q" placeholder="bijv. mentoruur, proefwerk, kantine…" aria-label="Zoekterm">
+<button onclick="check()">Check!</button>
+<div id="res"></div>
+</section>
+
+<section class="grid">
+<div class="card"><h2>📚 Lessen</h2><p>Gemiddeld 0 gram pindakaas per lesuur. Wel veel gapen. Dat is wetenschappelijk bewezen (door ons, net).</p></div>
+<div class="card"><h2>🍞 Kantine</h2><p>Broodje kaas: bevat kaas. Broodje gezond: bevat hoop. Pindakaas: zoek zelf maar.</p></div>
+<div class="card"><h2>🚲 Fietsenstalling</h2><p>Bevat 400 fietsen, 1 vergeten slot en 0 pot pindakaas. Je fiets staat altijd in het verste hoekje.</p></div>
+</section>
+
+<section class="card" id="rooster">
+<h2>🗓️ Jouw rooster vandaag</h2>
+<div class="scroll"><table>
+<tr><th>Uur</th><th>Vak</th><th>Pindakaas-gehalte</th></tr>
+<tr><td>1</td><td>Wiskunde (lokaal verplaatst)</td><td>0%</td></tr>
+<tr><td>2</td><td>Nederlands</td><td>0% (wel veel woorden)</td></tr>
+<tr><td>3</td><td>Tussenuur</td><td>Onbekend</td></tr>
+<tr><td>4</td><td>Mentoruur</td><td>12% (gevoelsmatig)</td></tr>
+<tr><td>5</td><td>Uitval 🎉</td><td>Heerlijk</td></tr>
+</table></div>
+</section>
+
+<section class="card" id="nieuws">
+<h2>📰 Laatste nieuws</h2>
+<p><b>Leerling vindt pot in kluisje.</b> Bleek leeg. Onderzoek loopt.</p>
+<p><b>Docent zegt “dit komt in de toets”.</b> Het kwam niet in de toets.</p>
+<p><b>Nieuwegein blijft Nieuwegein.</b> Verder geen bijzonderheden.</p>
+</section>
+
+<section class="card" id="faq">
+<h2>❓ Veelgestelde vragen</h2>
+<p><b>Is Cals College pindakaasvrij?</b><br>Ja, dat staat in de URL. Dus het moet kloppen.</p>
+<p><b>Waarom?</b><br>Waarom niet?</p>
+<p><b>Ik heb honger.</b><br>Dat is geen vraag, maar de kantine is open.</p>
+<p><b>Is dit een officiële website?</b><br>Nee. Dit is een grap. We LARP’en gewoon een school. 🎭</p>
+</section>
+
+<footer>* Niet officieel. Parodie. Geen enkele pindakaas is gewond geraakt tijdens het maken van deze site.<br>© bevatgeenpindakaas.nl</footer>
+</div>
+
+<script>
+var jokes=[
+"Bevat geen pindakaas ✅ wel 3 spiekbriefjes.",
+"Pindakaas-gehalte: 0%. Chaos-gehalte: 87%.",
+"Bevat geen pindakaas. Wel een ongemakkelijke stilte.",
+"Onderzoek wijst uit: hier zit pindakaas in. Tot onze eigen verbazing.",
+"Geen pindakaas gevonden. Wel een verdwaalde gymschoen.",
+"Bevat sporen van pindakaas 🥜 (de conciërge zegt van niet)."
+];
+function check(){
+var v=document.getElementById("q").value.trim();
+var el=document.getElementById("res");
+if(!v){el.textContent="Typ eerst iets, pindakaas-detective!";return}
+var i=(v.length*7+v.charCodeAt(0))%jokes.length;
+el.textContent="“"+v+"”: "+jokes[i];
+}
+document.getElementById("q").addEventListener("keydown",function(e){if(e.key==="Enter")check()});
+</script>
+</body>
+</html>
